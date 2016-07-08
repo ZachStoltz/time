@@ -3,6 +3,7 @@ import App from './src/components';
 import { Provider } from 'react-redux';
 import store from './src/redux/store';
 import {
+  View,
   AppRegistry
 } from 'react-native';
 
