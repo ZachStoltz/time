@@ -2,8 +2,7 @@ import { connect } from 'react-redux';
 import React, { Component, PropTypes } from 'react';
 import {
   StyleSheet,
-  Text,
-  View,
+  TabBarIOS,
 } from 'react-native';
 
 const styles = StyleSheet.create({
@@ -32,9 +31,14 @@ class App extends Component {
 
   render() {
     return (
-      <View style={styles.container}>
-        <Text>Hello!</Text>
-      </View>
+      <TabBarIOS
+        barTintColor="#E91E63"
+      >
+        <TabBarIOS.Item
+          systemIcon="history"
+        >
+        </TabBarIOS.Item>
+      </TabBarIOS>
     );
   }
 }
