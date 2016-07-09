@@ -1,20 +1,26 @@
-import React, { Component } from 'react';
-import App from './src/components';
+import App from './src/components/App';
 import { Provider } from 'react-redux';
+import React from 'react';
 import store from './src/redux/store';
-import {
-  View,
-  AppRegistry
-} from 'react-native';
+import { AppRegistry, NavigatorIOS, StyleSheet } from 'react-native';
 
-class Time extends Component {
-  render() {
-    return (
-      <Provider store={store}>
-        <App />
-      </Provider>
-    );
-  }
-}
+const styles = StyleSheet.create({
+  navigator: {
+    flex: 1,
+  },
+});
+
+const Time = () => (
+  <Provider store={store}>
+    <NavigatorIOS
+      initialRoute={{
+        title: 'time',
+        component: App,
+      }}
+      barTintColor="#E91E63"
+      style={styles.navigator}
+    />
+  </Provider>
+);
 
 AppRegistry.registerComponent('time', () => Time);

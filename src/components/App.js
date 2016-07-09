@@ -1,6 +1,10 @@
-import React, { Component, PropTypes } from 'react';
 import { connect } from 'react-redux';
-import { View, Text, StyleSheet } from 'react-native';
+import React, { Component, PropTypes } from 'react';
+import {
+  StyleSheet,
+  Text,
+  View,
+} from 'react-native';
 
 const styles = StyleSheet.create({
   container: {
@@ -29,9 +33,7 @@ class App extends Component {
   render() {
     return (
       <View style={styles.container}>
-        <Text style={styles.instructions}>
-          Hello =)
-        </Text>
+        <Text>Hello!</Text>
       </View>
     );
   }

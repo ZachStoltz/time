@@ -1,4 +1,15 @@
 {
   "extends": "airbnb",
-  "parser": "babel-eslint"
+  "parser": "babel-eslint",
+  "rules": {
+    "sort-imports": [2, {
+      "ignoreCase": true,
+      "memberSyntaxSortOrder": [
+        "none",
+        "all",
+        "single",
+        "multiple"
+      ]
+    }]
+  }
 }
