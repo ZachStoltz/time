@@ -1,7 +1,7 @@
 import { combineReducers } from 'redux';
-import testReducer from './testReducer';
+import tabBar from './tabBar';
 const rootReducer = combineReducers({
-  testReducer
+  tabBar,
 });
 
 export default rootReducer;

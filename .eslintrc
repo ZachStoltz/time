@@ -10,6 +10,7 @@
         "single",
         "multiple"
       ]
-    }]
+    }],
+    "arrow-body-style": [0, "as-needed"]
   }
 }

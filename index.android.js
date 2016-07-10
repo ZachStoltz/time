@@ -1,34 +1,10 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- * @flow
- */
-
-import React, { Component } from 'react';
+import React from 'react';
 import {
   AppRegistry,
   StyleSheet,
   Text,
-  View
+  View,
 } from 'react-native';
-
-class time extends Component {
-  render() {
-    return (
-      <View style={styles.container}>
-        <Text style={styles.welcome}>
-          Welcome to React Native!
-        </Text>
-        <Text style={styles.instructions}>
-          To get started, edit index.android.js
-        </Text>
-        <Text style={styles.instructions}>
-          Shake or press menu button for dev menu
-        </Text>
-      </View>
-    );
-  }
-}
 
 const styles = StyleSheet.create({
   container: {
@@ -49,4 +25,19 @@ const styles = StyleSheet.create({
   },
 });
 
-AppRegistry.registerComponent('time', () => time);
+const Time = () => (
+  // TODO: needed to create entry route for Android
+  <View style={styles.container}>
+    <Text style={styles.welcome}>
+      Welcome to React Native!
+    </Text>
+    <Text style={styles.instructions}>
+      To get started, edit index.android.js
+    </Text>
+    <Text style={styles.instructions}>
+      Shake or press menu button for dev menu
+    </Text>
+  </View>
+);
+
+AppRegistry.registerComponent('time', () => Time);
